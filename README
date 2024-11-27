@@ -1,0 +1,14 @@
+#CRIANDO AMBIENTE VIRTUAL:
+python -m venv env
+pip install django
+django-admin startproject asyncviews .         #https://docs.djangoproject.com/en/5.1/ref/django-admin/
+python manage.py migrate        #Criando o migrate
+
+#CRIANDO VIEWS
+>criei um arquivo views.py com código
+>adicionei path no arquivo url.py
+
+#INSTALANDO O ASGI
+pip install uvicorn
+pip install httpx
+uvicorn --reload asyncviews.asgi:application         #Serve para rodar a aplicação tambem
